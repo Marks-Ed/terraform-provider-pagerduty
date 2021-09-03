@@ -22,7 +22,7 @@ func Provider() terraform.ResourceProvider {
 
 			"token": {
 				Type:        schema.TypeString,
-				Required:    true,
+				Optional:    true,
 				DefaultFunc: schema.EnvDefaultFunc("PAGERDUTY_TOKEN", nil),
 			},
 		},
